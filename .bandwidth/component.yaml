@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  schemaVersion: v1.0.0
+  name: ansible_collection_falcon
+  description: Forked from https://github.com/CrowdStrike/ansible_collection_falcon
+  annotations:
+    github.com/project-slug: Bandwidth/ansible_collection_falcon
+  organization: BW
+  costCenter: IT - Security
+  platformType: N/A
+  buildPlatform: GitHub Actions
+spec:
+  type: Utility
+  owner: github/band-infosec
+  lifecycle: |
+    Prototype
+    dependsOn:
+        - resource:platform/N/A
+        - resource:cost-center/IT - Security
