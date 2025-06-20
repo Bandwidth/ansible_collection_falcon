@@ -67,7 +67,7 @@ jobs:
         with:
           python-version: '3.11'
           cache: 'pip'
-          cache-dependency-path: '.github/workflows/win_falcon_install.yml'
+          cache-dependency-path: '.devcontainer/requirements.txt'
 
       - name: Install dependencies
         run: |
@@ -96,7 +96,7 @@ jobs:
           MOLECULE_INSTANCE_TYPE: ${{ matrix.molecule.instance_type }}
           MOLECULE_REGION: ${{ env.AWS_REGION}}
         with:
-          timeout_minutes: 20
+          timeout_minutes: 30
           max_attempts: 3
           retry_on: error
           command: >-

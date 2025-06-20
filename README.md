@@ -1,4 +1,4 @@
-[![Galaxy version](https://img.shields.io/badge/dynamic/json?style=flat&label=Galaxy&prefix=v&url=https://galaxy.ansible.com/api/v3/plugin/ansible/content/published/collections/index/crowdstrike/falcon/versions/?is_highest=true&query=data[0].version)](https://galaxy.ansible.com/ui/repo/published/crowdstrike/falcon/)
+![Ansible Collection Version](https://img.shields.io/ansible/collection/v/crowdstrike/falcon?style=flat)
 
 # CrowdStrike Falcon Collection
 
@@ -53,8 +53,10 @@ Name | Description
 [crowdstrike.falcon.auth](https://crowdstrike.github.io/ansible_collection_falcon/auth_module.html)|Manage Authentication with Falcon API
 [crowdstrike.falcon.cid_info](https://crowdstrike.github.io/ansible_collection_falcon/cid_info_module.html)|Get CID with checksum
 [crowdstrike.falcon.host_contain](https://crowdstrike.github.io/ansible_collection_falcon/host_contain_module.html)|Network contain hosts in Falcon
-[crowdstrike.falcon.host_hide](https://crowdstrike.github.io/ansible_collection_falcon/host_hide_module.html)|Hide/Unhide hosts from the Falcon console
+[crowdstrike.falcon.host_hide](https://crowdstrike.github.io/ansible_collection_falcon/host_hide_module.html)|Hide/Unhide hosts from the Falcon console. Preference should be given to using `Host Retention Policies` under `Host Management` in the Falcon console which provides more flexibility and customization for automatically hiding and deleting hosts instead.
 [crowdstrike.falcon.host_info](https://crowdstrike.github.io/ansible_collection_falcon/host_info_module.html)|Get information about Falcon hosts
+[crowdstrike.falcon.intel_rule_download](https://crowdstrike.github.io/ansible_collection_falcon/intel_rule_download_module.html)|Download CrowdStrike Falcon Intel rule files
+[crowdstrike.falcon.intel_rule_info](https://crowdstrike.github.io/ansible_collection_falcon/intel_rule_info_module.html)|Get information about CrowdStrike Falcon Intel rules
 [crowdstrike.falcon.kernel_support_info](https://crowdstrike.github.io/ansible_collection_falcon/kernel_support_info_module.html)|Get information about kernels supported by the Falcon Sensor for Linux
 [crowdstrike.falcon.sensor_download](https://crowdstrike.github.io/ansible_collection_falcon/sensor_download_module.html)|Download Falcon Sensor Installer
 [crowdstrike.falcon.sensor_download_info](https://crowdstrike.github.io/ansible_collection_falcon/sensor_download_info_module.html)|Get information about Falcon Sensor Installers
@@ -84,7 +86,7 @@ Ansible EDA (Event Driven Ansible) is a new way to connect to sources of events 
 
 Name | Description
 --- | ---
-[crowdstrike.falcon.eventstream](./docs/crowdstrike.falcon.eventstream.md) | Receive events from CrowdStrike Falcon Event Stream.
+[crowdstrike.falcon.eventstream](https://github.com/CrowdStrike/ansible_collection_falcon/blob/main/docs/crowdstrike.falcon.eventstream.md) | Receive events from CrowdStrike Falcon Event Stream.
 
 <!--end eda content-->
 
@@ -147,7 +149,7 @@ The Python module dependencies are not automatically handled by `ansible-galaxy`
 ## Authentication
 
 To use this Ansible collection effectively, you'll need to authenticate with the CrowdStrike Falcon API. We've prepared a detailed guide
-outlining the various authentication mechanisms supported. Check out the [Authentication Guide](docs/authentication.md) for step-by-step instructions.
+outlining the various authentication mechanisms supported. Check out the [Authentication Guide](https://github.com/CrowdStrike/ansible_collection_falcon/blob/main/docs/authentication.md) for step-by-step instructions.
 
 ## Use Cases
 
@@ -248,7 +250,7 @@ The CrowdStrike Falcon Ansible collection uses automated testing through Molecul
 
 This automated testing pipeline helps maintain collection reliability and quickly identifies potential issues across different environments and use cases.
 
-To learn more about how we use Molecule, check out the [molecule](./molecule/) directory.
+To learn more about how we use Molecule, check out the [molecule](https://github.com/CrowdStrike/ansible_collection_falcon/blob/main/molecule/) directory.
 
 Nightly Results: [Actions](https://github.com/CrowdStrike/ansible_collection_falcon/actions)
 
@@ -264,11 +266,11 @@ likely be `bugfixes` or `minor_changes`. Please refer to the documentation for [
 
 CrowdStrike Ansible Collection is a community-driven, open source project aimed at simplifying the integration and utilization of CrowdStrike's Falcon platform with Ansible automation. While not an official CrowdStrike product, the CrowdStrike Ansible Collection is maintained by CrowdStrike and supported in collaboration with the open source developer community.
 
-For additional information, please refer to the [SUPPORT.md](./SUPPORT.md) file.
+For additional information, please refer to the [SUPPORT.md](https://github.com/CrowdStrike/ansible_collection_falcon/blob/main/SUPPORT.md) file.
 
 ## Release Notes
 
-See the [CHANGELOG.rst](./CHANGELOG.rst) for a history of notable changes to this collection.
+See the [CHANGELOG.rst](https://github.com/CrowdStrike/ansible_collection_falcon/blob/main/CHANGELOG.rst) for a history of notable changes to this collection.
 
 ## Related information
 
@@ -276,11 +278,10 @@ See the [CHANGELOG.rst](./CHANGELOG.rst) for a history of notable changes to thi
 - [Ansible User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html)
 - [Ansible Using Collections](https://docs.ansible.com/ansible/latest/user_guide/collections_using.html)
 - [Ansible Community Code of Conduct](https://docs.ansible.com/ansible/latest/community/code_of_conduct.html)
-- [Ansible Community Code of Conduct](https://docs.ansible.com/ansible/latest/community/code_of_conduct.html)
 - [Ansible Rulebook Introduction](https://ansible.readthedocs.io/projects/rulebook/en/latest/getting_started.html)
 - [Event Driven Ansible Introduction](https://www.ansible.com/blog/getting-started-with-event-driven-ansible)
 - [CrowdStrike FalconPy SDK](https://www.falconpy.io/)
 
 ## License Information
 
-See the [LICENSE](LICENSE) for more information.
+See the [LICENSE](https://github.com/CrowdStrike/ansible_collection_falcon/blob/main/LICENSE) for more information.

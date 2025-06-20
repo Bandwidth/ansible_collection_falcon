@@ -8,3 +8,7 @@ __pycache__/
 /.vscode
 html/
 ansible.cfg
+Vagrantfile
+.vagrant/
+.tox
+.ruff_cache

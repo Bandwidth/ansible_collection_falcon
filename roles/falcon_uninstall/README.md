@@ -23,6 +23,8 @@ Uninstalls the CrowdStrike Falcon Sensor.
     - **eu-1** -> api.eu-1.crowdstrike.com
 - `falcon_api_enable_no_log` - Whether to enable or disable the logging of sensitive data being exposed in API calls (bool, default: ***true***)
 - `falcon_remove_host` - Whether to hide/remove the host from the CrowdStrike console (bool, default: false)
+   > :warning:
+   > Please use `Host Retention Policies` under `Host Management` in the Falcon console which provides more flexibility and customization for automatically hiding and deleting hosts instead.
 
 ### Windows Specific Variables
 
@@ -31,7 +33,7 @@ Uninstalls the CrowdStrike Falcon Sensor.
 - `falcon_windows_become_method` - The way to become a privileged user on Windows (string, default: ***runas***)
 - `falcon_windows_become_user` - The privileged user to uninstall the sensor on Windows (string, default: ***SYSTEM***)
 
-See [defaults/main.yml](defaults/main.yml) for more details on these variables.
+See [defaults/main.yml](https://github.com/CrowdStrike/ansible_collection_falcon/blob/main/roles/falcon_uninstall/defaults/main.yml) for more details on these variables.
 
 ## Falcon API Permissions
 
@@ -46,7 +48,7 @@ Ensure the following API scopes are enabled (**if applicable**) for this role:
 ## Dependencies
 
 - Privilege escalation (sudo/runas) is required for this role to function properly.
-  > See [Privilege Escalation Requirements](../../README.md#privilege-escalation-requirements) for more information.
+  > See [Privilege Escalation Requirements](https://github.com/CrowdStrike/ansible_collection_falcon/blob/main/README.md#privilege-escalation-requirements) for more information.
 
 ## Example Playbooks
 
